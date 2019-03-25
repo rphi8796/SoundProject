@@ -25,9 +25,7 @@ public class SoundPanel extends JPanel
 		
 		appLayout = new SpringLayout();
 		take = new JButton("Take on Me");
-		appLayout.putConstraint(SpringLayout.NORTH, take, 82, SpringLayout.NORTH, this);
-		appLayout.putConstraint(SpringLayout.WEST, take, 126, SpringLayout.WEST, this);
-		appLayout.putConstraint(SpringLayout.SOUTH, take, 238, SpringLayout.NORTH, this);
+		
 		alex = new JButton("Alex");
 		appLayout.putConstraint(SpringLayout.NORTH, alex, 10, SpringLayout.NORTH, this);
 		appLayout.putConstraint(SpringLayout.WEST, alex, 22, SpringLayout.WEST, this);
@@ -53,6 +51,9 @@ public class SoundPanel extends JPanel
 	
 	private void setupLayout()
 	{
+		appLayout.putConstraint(SpringLayout.NORTH, take, 82, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.WEST, take, 126, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.SOUTH, take, 238, SpringLayout.NORTH, this);
 	}
 	
 	private void setupListeners()
